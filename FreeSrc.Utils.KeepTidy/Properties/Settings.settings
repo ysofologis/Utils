@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FreeSrc.Utils.KeepTidy.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="projectDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Projects\Bin</Value>
+    </Setting>
+    <Setting Name="excludeFolders" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\.svn</Value>
+    </Setting>
+    <Setting Name="commandFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MyApp.*exe$|MyApp2\.exe$</Value>
+    </Setting>
+    <Setting Name="serviceFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MyCompany</Value>
+    </Setting>
+    <Setting Name="garbageFilter" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\.pdb$|\.exp$|\.obj$|\.dll\.config$|vshost|\.lib$|\.bsc$|\.bin$|\.metagen$|\.cache$|\.manifest$|\.pch$|UVNC|atmmsg\\M.*txt$</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
