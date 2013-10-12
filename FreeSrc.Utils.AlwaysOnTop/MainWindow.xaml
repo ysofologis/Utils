@@ -3,7 +3,11 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="FreeSrc - Always On Top" 
         Height="300" 
-        Width="800" WindowStartupLocation="CenterScreen" Icon="Resources/app.png">
+        Width="800" 
+        Topmost="true"
+        WindowStartupLocation="CenterScreen" 
+        FontSize="11"
+        Icon="Resources/app.png">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -11,7 +15,7 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Margin="10,5,10,5">
             <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Background="LightGray">
@@ -25,20 +29,20 @@
             <ListBox Grid.Row="1" ItemsSource="{Binding OpenedWindows}" HorizontalContentAlignment="Stretch">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Grid Height="30">
+                        <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
-                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="100"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Title}"></TextBlock>
-                            <Grid Grid.Column="1">
+                            <Grid Grid.Column="0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="50"/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="{Binding Icon}" Margin="5"/>
-                                <CheckBox Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" IsChecked="{Binding AlwaysOnTop}"></CheckBox>
+                                <Image Source="{Binding Icon}" Margin="1.5" />
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Title}"></TextBlock>
                             </Grid>
+                            <CheckBox Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" IsChecked="{Binding AlwaysOnTop}"></CheckBox>
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

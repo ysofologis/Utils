@@ -51,7 +51,7 @@ namespace FreeSrc.Utils.AlwaysOnTop
             var bitmap = new System.Windows.Media.Imaging.BitmapImage();
             bitmap.BeginInit();
             MemoryStream memoryStream = new MemoryStream();
-            img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Bmp);
+            img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
             memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
             bitmap.StreamSource = memoryStream;
             bitmap.EndInit();
@@ -61,9 +61,15 @@ namespace FreeSrc.Utils.AlwaysOnTop
 
         private void scanDesktop_Click(object sender, RoutedEventArgs e)
         {
-            _viewModel.OpenedWindows.Clear();
+            Task.Factory.StartNew(() =>
+                {
+                    this.Dispatcher.BeginInvoke( new Action(  () =>
+                        {
+                            _viewModel.OpenedWindows.Clear();
 
-            Win32Api.GetDesktopWindowsTitles(this);
+                            Win32Api.GetDesktopWindowsTitles(this);
+                        } ) );
+                });
         }
     }
 }
