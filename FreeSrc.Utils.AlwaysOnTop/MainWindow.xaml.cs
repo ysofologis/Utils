@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MahApps.Metro.Controls;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace FreeSrc.Utils.AlwaysOnTop
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, Win32Api.IEnumeratorCallback
+    public partial class MainWindow : MetroWindow, Win32Api.IEnumeratorCallback
     {
         private ViewModel _viewModel;
 
@@ -51,7 +52,7 @@ namespace FreeSrc.Utils.AlwaysOnTop
             var bitmap = new System.Windows.Media.Imaging.BitmapImage();
             bitmap.BeginInit();
             MemoryStream memoryStream = new MemoryStream();
-            img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Bmp);
+            img.Save(memoryStream, System.Drawing.Imaging.ImageFormat.Png);
             memoryStream.Seek(0, System.IO.SeekOrigin.Begin);
             bitmap.StreamSource = memoryStream;
             bitmap.EndInit();

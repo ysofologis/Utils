@@ -1,9 +1,16 @@
-﻿<Window x:Class="FreeSrc.Utils.AlwaysOnTop.MainWindow"
+﻿<controls:MetroWindow x:Class="FreeSrc.Utils.AlwaysOnTop.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="FreeSrc - Always On Top" 
         Height="300" 
-        Width="800" WindowStartupLocation="CenterScreen" Icon="Resources/app.png">
+        Width="900" 
+        Topmost="True"
+        WindowStartupLocation="CenterScreen" 
+        Icon="Resources/app.png">
+    <controls:MetroWindow.Background>
+        <SolidColorBrush Color="LightGray" Opacity="0.8"/>
+    </controls:MetroWindow.Background>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -22,7 +29,10 @@
                 <TextBlock Grid.Column="0" Text="Window Title" VerticalAlignment="Center" FontWeight="Bold" FontSize="12"></TextBlock>
                 <TextBlock Grid.Column="1" Text="Always On Top" VerticalAlignment="Center" FontWeight="Bold" FontSize="12"></TextBlock>
             </Grid>
-            <ListBox Grid.Row="1" ItemsSource="{Binding OpenedWindows}" HorizontalContentAlignment="Stretch">
+            <ListBox Grid.Row="1" ItemsSource="{Binding OpenedWindows}" HorizontalContentAlignment="Stretch" Foreground="DarkBlue" FontWeight="Medium">
+                <ListBox.Background>
+                    <SolidColorBrush Color="#66BEB385" Opacity="0.4"/>
+                </ListBox.Background>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid Height="30">
@@ -42,10 +52,15 @@
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="{x:Type ListBoxItem}">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
             </ListBox>
         </Grid>
         <UniformGrid Grid.Row="1" Columns="4" FirstColumn="3" Margin="10,5,10,5">
             <Button x:Name="scanDesktop" Content="Scan " Click="scanDesktop_Click"></Button>
         </UniformGrid>
     </Grid>
-</Window>
+</controls:MetroWindow>
