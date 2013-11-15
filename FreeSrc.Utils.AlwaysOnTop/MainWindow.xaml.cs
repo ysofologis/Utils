@@ -62,9 +62,15 @@ namespace FreeSrc.Utils.AlwaysOnTop
 
         private void scanDesktop_Click(object sender, RoutedEventArgs e)
         {
+            Task.Factory.StartNew(() =>
+                {
+                    this.Dispatcher.BeginInvoke( new Action(  () =>
+                        {
             _viewModel.OpenedWindows.Clear();
 
             Win32Api.GetDesktopWindowsTitles(this);
+                        } ) );
+                });
         }
     }
 }

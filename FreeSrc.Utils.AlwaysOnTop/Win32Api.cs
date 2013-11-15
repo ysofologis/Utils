@@ -102,7 +102,11 @@ namespace FreeSrc.Utils.AlwaysOnTop
                     hIcon = LoadIcon(IntPtr.Zero, (IntPtr)0x7F00/*IDI_APPLICATION*/);
 
                 if (hIcon != IntPtr.Zero)
-                    return new Bitmap(Icon.FromHandle(hIcon).ToBitmap(), 16, 16);
+                {
+                    var r = new Bitmap(Icon.FromHandle(hIcon).ToBitmap(), 24, 24);
+
+                    return r;
+                }
                 else
                     return null;
             }

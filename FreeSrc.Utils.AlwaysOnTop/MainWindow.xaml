@@ -18,7 +18,7 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Margin="10,5,10,5">
             <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Background="LightGray">
@@ -35,21 +35,21 @@
                 </ListBox.Background>
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <Grid Height="30">
+                        <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
-                                <ColumnDefinition Width="120"/>
+                                <ColumnDefinition Width="100"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" VerticalAlignment="Center" Text="{Binding Title}"></TextBlock>
-                            <Grid Grid.Column="1">
+                            <Grid Grid.Column="0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="50"/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Image Source="{Binding Icon}" Margin="5"/>
+                                <Image Source="{Binding Icon}" Margin="1.5" />
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Title}"></TextBlock>
+                            </Grid>
                                 <CheckBox Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" IsChecked="{Binding AlwaysOnTop}"></CheckBox>
                             </Grid>
-                        </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
                 <ListBox.ItemContainerStyle>
