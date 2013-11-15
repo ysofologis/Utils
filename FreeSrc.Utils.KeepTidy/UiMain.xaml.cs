@@ -12,13 +12,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
+using MahApps.Metro.Controls;
 
 namespace FreeSrc.Utils.KeepTidy
 {
    /// <summary>
    /// Interaction logic for MainWindow.xaml
    /// </summary>
-   public partial class UiMain : Window
+   public partial class UiMain : MetroWindow
    {
       public UiMain()
       {
