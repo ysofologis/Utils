@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         Title="FreeSrc - Always On Top" 
-        Height="300" 
-        Width="900" 
+        Height="500" 
+        Width="700" 
         Topmost="True"
         WindowStartupLocation="CenterScreen" 
         Icon="Resources/app.png">
@@ -40,9 +40,9 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition Width="100"/>
                             </Grid.ColumnDefinitions>
-                            <Grid Grid.Column="0">
+                            <Grid Grid.Column="0" Height="40">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="40"/>
                                     <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
                                 <Image Source="{Binding Icon}" Margin="1.5" />

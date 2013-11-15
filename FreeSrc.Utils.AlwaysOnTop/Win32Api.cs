@@ -103,7 +103,7 @@ namespace FreeSrc.Utils.AlwaysOnTop
 
                 if (hIcon != IntPtr.Zero)
                 {
-                    var r = new Bitmap(Icon.FromHandle(hIcon).ToBitmap(), 24, 24);
+                    var r = new Bitmap(Icon.FromHandle(hIcon).ToBitmap(), 64, 64);
 
                     return r;
                 }
