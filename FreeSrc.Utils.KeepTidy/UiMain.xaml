@@ -91,7 +91,7 @@
     <Grid x:Name="LayoutRoot"
          Margin="10,5,10,5">
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
+            <RowDefinition Height="35"/>
             <RowDefinition Height="5"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -176,7 +176,7 @@
                             </Grid>
 
                             <!-- show garbage file-->
-                            <Grid Grid.Row="1">
+                            <Grid Grid.Row="1" Margin="0,5,0,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
                                     <RowDefinition Height="50"/>
@@ -272,7 +272,7 @@
                             </Grid>
 
                             <!-- show garbage file-->
-                            <Grid Grid.Row="1">
+                            <Grid Grid.Row="1" Margin="0,5,0,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
                                     <RowDefinition Height="50"/>
@@ -386,7 +386,7 @@
                             </Grid>
 
                             <!-- show garbage file-->
-                            <Grid Grid.Row="1">
+                            <Grid Grid.Row="1" Margin="0,5,0,0">
                                 <Grid.RowDefinitions>
                                     <RowDefinition/>
                                     <RowDefinition Height="50"/>
