@@ -6,7 +6,10 @@ import sys
 PUBLIC_SERVICE_ADDRESS = "http://iapplyngprod.azurewebsites.net"
 LOCAL_SERVICE_ADDRESS = "http://localhost:57611"
 DEFAULT_SERVICE_ADDRESS = PUBLIC_SERVICE_ADDRESS
+DEFAULT_SERVICE_ADDRESS = LOCAL_SERVICE_ADDRESS
+#DEFAULT_SERVICE_ADDRESS = "http://ia2server/iapplyng"
 DEFAULT_PAGE_SIZE = 50
+PROJECT_DIR = "C:\Projects\iApplyNG"
 
 class Service:
     def __init__(self, service_address = DEFAULT_SERVICE_ADDRESS, user_name = "dev01", user_password = "PASSW0RD"):
@@ -24,6 +27,8 @@ class Service:
             if login_resp.status_code == 200:
                 resp_data = login_resp.json()
                 self.session_id = resp_data["SessionId"]
+            else:
+                login_resp.raise_for_status()
 
         return self.session_id
 
@@ -47,12 +52,16 @@ class Service:
         headers =  { "session-id" : self.get_session_id() }
         response = requests.get(url = request_url, headers = headers)
         if response.status_code == 200:
-            request_items = response.json()["Items"]
-            if len(request_items) > 0 and len(request_items) == page_size :
-                next_items = self._get_paged(resource_name,page+1,page_size)
-                return request_items + next_items
+            resp_data = response.json()
+            if resp_data.has_key("Items"):
+                request_items = resp_data["Items"]
+                if len(request_items) > 0 and len(request_items) == page_size :
+                    next_items = self._get_paged(resource_name,page+1,page_size)
+                    return request_items + next_items
+                else:
+                    return request_items
             else:
-                return request_items
+                return []
         else:
             response.raise_for_status()
 
@@ -69,7 +78,7 @@ class Service:
             response.raise_for_status()
 
 
-    def upsert_specification(self, spec_resource, spec_name, spec_file, def_key = 'Definition'):
+    def upsert_specification(self, spec_resource, spec_name, spec_file, def_key = 'Definition', naked_definition_on_update = True):
         f= open(spec_file,"r")
         def_text = f.read();
         def_node = json.loads(def_text)
@@ -85,9 +94,15 @@ class Service:
                 break
 
         if existing_id:
-            self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = data)
+            if naked_definition_on_update:
+                self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = json.dumps(def_node) )
+            else:
+                self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = data )
         else:
             self.create_resource( resource_name = spec_resource, req_data = data)
+
+        pass
+
         
 
 
@@ -106,14 +121,46 @@ def test1():
         print x
 
 
-def create_demo_2013_specs():
+#------------------------------------------------------------------------------------------------
+def create_web_service_demo_2013_specs(service_addr = DEFAULT_SERVICE_ADDRESS):
     try:
-        iapply_service = Service()
-        iapply_service.upsert_specification("casedefinitions", "WebServiceDemo", "C:\Projects\iApplyNG\scripts\december_2013_demo\emulated_clients\Case Definitions\WebServiceDemo.json")
-        iapply_service.upsert_specification("taskspecifications", "WS_Demo_SelectStock", "C:\Projects\iApplyNG\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\WS_Demo_SelectStock.json", def_key = 'TaskDefinition')
-        iapply_service.upsert_specification("taskspecifications", "WS_Demo_ViewStock", "C:\Projects\iApplyNG\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\WS_Demo_ViewStock.json", def_key = 'TaskDefinition')
+        iapply_service = Service(service_addr)
+        iapply_service.upsert_specification("casedefinitions", "WebServiceDemo", "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\WebServiceDemo.json" % PROJECT_DIR)
+        iapply_service.upsert_specification("taskspecifications", "WS_Demo_SelectStock", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\WS_Demo_SelectStock.json" % PROJECT_DIR, 
+                                            def_key = 'TaskDefinition',
+                                            naked_definition_on_update = False)
+        iapply_service.upsert_specification("taskspecifications", "WS_Demo_ViewStock", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\WS_Demo_ViewStock.json" % PROJECT_DIR, 
+                                            def_key = 'TaskDefinition',
+                                            naked_definition_on_update = False)
+        print "OK"
+    except Exception as x:
+        print x
+#------------------------------------------------------------------------------------------------
+def create_parallel_demo_2013_specs(service_addr = DEFAULT_SERVICE_ADDRESS):
+    try:
+        iapply_service = Service(service_addr)
+        iapply_service.upsert_specification("casedefinitions", "HumanTaskDemo_PD", "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\HumanTaskDemo.txt" % PROJECT_DIR)
+        iapply_service.upsert_specification("subprocesses", "RiskAnalysisSubProcess_PD", "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\RiskSubProcess.txt" % PROJECT_DIR)
+
+        iapply_service.upsert_specification("taskspecifications", "ReviewApp_PD", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\BR_Manager_Task.txt" % PROJECT_DIR, 
+                                            def_key = 'TaskDefinition',
+                                            naked_definition_on_update = False)
+        iapply_service.upsert_specification("taskspecifications", "CreateApplication_PD", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\BR_Teller_Task.txt" % PROJECT_DIR, 
+                                            def_key = 'TaskDefinition',
+                                            naked_definition_on_update = False)
+        iapply_service.upsert_specification("taskspecifications", "AuditApp_PD", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\HQ_Auditor_Task.txt" % PROJECT_DIR, 
+                                            def_key = 'TaskDefinition',
+                                            naked_definition_on_update = False)
+        iapply_service.upsert_specification("taskspecifications", "RiskAnalysisTask_PD", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\HQ_RiskAnalyst_Task.txt" % PROJECT_DIR, 
+                                            def_key = 'TaskDefinition',
+                                            naked_definition_on_update = False)
+        iapply_service.upsert_specification("taskspecifications", "AdvancedRiskAnalysis_PD", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\HQ_SeniorRiskAnalyst_Task.txt" % PROJECT_DIR, 
+                                            def_key = 'TaskDefinition',
+                                            naked_definition_on_update = False)
+
         print "OK"
     except Exception as x:
         print x
 
-create_demo_2013_specs()
+create_parallel_demo_2013_specs("http://ia2server/iapplyng")
+# create_web_service_demo_2013_specs("http://localhost:57611")

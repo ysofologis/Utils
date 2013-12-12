@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\trickle-1.06">
+      <UniqueIdentifier>{71a4817d-9784-4319-9d73-7803510980c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\trickle-1.06">
+      <UniqueIdentifier>{2174c260-6c2a-4429-95e4-7541c594095a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\acconfig.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\bwstat.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\cleanup.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\client.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\conf.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\message.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\print.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\trickle.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\trickledu.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\util.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+    <ClInclude Include="trickle-1.06\xdr.h">
+      <Filter>Header Files\trickle-1.06</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\atomicio.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\cleanup.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\client.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\conf.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\daemon.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\err.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\getopt.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\print.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\setenv.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\strlcat.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\strlcpy.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\strsep.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\trickle.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\tricklectl.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\trickled.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\trickledu.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\trickle-overload.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\util.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\xdr.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+    <ClCompile Include="trickle-1.06\bwstat.c">
+      <Filter>Source Files\trickle-1.06</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
