@@ -38,9 +38,11 @@ def create_parallel_demo_2013_specs(service_addr = DEFAULT_SERVICE_ADDRESS):
     try:
         iapply_service = Service(service_addr)
         case_id = iapply_service.upsert_specification("casedefinitions", "HumanTaskDemo_PD", "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\HumanTaskDemo.txt" % PROJECT_DIR)
+
         iapply_service.upsert_specification( spec_resource = "subprocesses", spec_name = "RiskAnalysisSubProcess_PD", 
                                                 spec_file = "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\RiskSubProcess.txt" % PROJECT_DIR, 
-                                                parent_id = case_id)
+                                                parent_id = case_id, 
+                                                is_local = True)
 
         iapply_service.upsert_specification("taskspecifications", "ReviewApp_PD", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\BR_Manager_Task.txt" % PROJECT_DIR, 
                                             def_key = 'TaskDefinition',

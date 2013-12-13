@@ -48,7 +48,8 @@ class Service:
         if response.status_code not in (200,201):
             response.raise_for_status()
         else:
-            return response.json()
+            if response.content.strip():
+                return response.json()
 
 
     def _get_paged(self, resource_name, page = 1, page_size = DEFAULT_PAGE_SIZE):
@@ -82,7 +83,10 @@ class Service:
             response.raise_for_status()
 
 
-    def upsert_specification(self, spec_resource, spec_name, spec_file, def_key = 'Definition', naked_definition_on_update = True, parent_id = None):
+    def upsert_specification(self, spec_resource, spec_name, spec_file, def_key = 'Definition', 
+                                            naked_definition_on_update = True, 
+                                            parent_id = None, 
+                                            is_local = False):
         f= open(spec_file,"r")
         def_text = f.read();
         def_node = json.loads(def_text)
@@ -90,10 +94,10 @@ class Service:
         
         all_specs = self.get_resources(spec_resource)
         existing_id = None
-        data = json.dumps( { 'Name': spec_name, def_key : def_node } )
+        data = json.dumps( { 'Name': spec_name, def_key : def_node, 'IsLocal' : is_local } )
 
         if parent_id:
-            data = json.dumps( { 'Name': spec_name, def_key : def_node, 'SpecificationId': parent_id  } )
+            data = json.dumps( { 'Name': spec_name, def_key : def_node, 'SpecificationId': parent_id, 'IsLocal' : is_local  } )
 
         for p in all_specs:
             if p['Name'] == spec_name:
@@ -103,10 +107,10 @@ class Service:
         if existing_id:
             if naked_definition_on_update:
                 r = self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = json.dumps(def_node) )
-                return r['Id']
+                return existing_id
             else:
                 r = self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = data )
-                return r['Id']
+                return existing_id
         else:
             r = self.create_resource( resource_name = spec_resource, req_data = data)
             return r['Id']
