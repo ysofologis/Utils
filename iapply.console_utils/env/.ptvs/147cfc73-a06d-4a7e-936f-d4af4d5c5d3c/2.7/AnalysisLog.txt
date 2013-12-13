@@ -575,3 +575,600 @@ C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Micro
 2013-12-12T14:15:39: Analysis complete
 2013-12-12T14:15:39: Saving group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests"
 2013-12-12T14:15:40: End of group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests"
+
+2013-12-13T11:21:18: Start analysis
+2013-12-13T11:21:28: Deleting 311 files
+2013-12-13T11:21:28: Scraping builtin modules
+2013-12-13T11:21:28: Command: C:\Projects\GitHub\Utils\iapply.console_utils\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\PythonScraper.py" C:\Projects\GitHub\Utils\iapply.console_utils\env\.ptvs\147cfc73-a06d-4a7e-936f-d4af4d5c5d3c\2.7 "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB"
+2013-12-13T11:21:28: Output
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\__builtin__.idb
+2013-12-13T11:21:28: [WARNING] Errors
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\PythonScraper.py", line 1007, in <module>
+    write_module(builtin_name, outpath, res)
+  File "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\PythonScraper.py", line 993, in write_module
+    write_analysis(os.path.join(outpath, mod_name), analysis)
+  File "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\PythonScraper.py", line 964, in write_analysis
+    out_file = open(out_filename + '.idb', 'wb')
+IOError: [Errno 13] Permission denied: 'C:\\Projects\\GitHub\\Utils\\iapply.console_utils\\env\\.ptvs\\147cfc73-a06d-4a7e-936f-d4af4d5c5d3c\\2.7\\__builtin__.idb'
+2013-12-13T11:21:28: [ERROR] Failed to scrape builtin modules (Exit Code: 1)
+2013-12-13T11:21:28: [ERROR] Analysis failed
+System.InvalidOperationException: Failed to scrape builtin modules
+   at Microsoft.PythonTools.Analysis.PyLibAnalyzer.Scrape()
+   at Microsoft.PythonTools.Analysis.PyLibAnalyzer.Main(String[] args)
+
+2013-12-13T11:21:29: Start analysis
+2013-12-13T11:21:29: Deleting 2 files
+2013-12-13T11:21:29: Scraping builtin modules
+2013-12-13T11:21:29: Command: C:\Projects\GitHub\Utils\iapply.console_utils\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\PythonScraper.py" C:\Projects\GitHub\Utils\iapply.console_utils\env\.ptvs\147cfc73-a06d-4a7e-936f-d4af4d5c5d3c\2.7 "C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB"
+2013-12-13T11:21:31: Output
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\__builtin__.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_codecs.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_collections.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_functools.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_heapq.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_io.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_locale.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_md5.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_random.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_sha.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_sha256.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_sha512.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_sre.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_struct.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_subprocess.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_warnings.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_weakref.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\_winreg.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\array.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\binascii.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\cPickle.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\cStringIO.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\cmath.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\datetime.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\errno.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\exceptions.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\future_builtins.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\gc.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\imp.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\itertools.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\marshal.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\math.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\mmap.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\msvcrt.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\nt.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\operator.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\signal.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\sys.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\thread.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\time.idb
+C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.0\CompletionDB\xxsubtype.idb
+2013-12-13T11:21:31: Scraped builtin modules
+2013-12-13T11:21:31: Start group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\" with 143 files
+2013-12-13T11:21:32: NoCallSiteAnalysis = sympy
+2013-12-13T11:21:32: Parsing "abc" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\abc.py")
+2013-12-13T11:21:32: Parsing "codecs" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\codecs.py")
+2013-12-13T11:21:32: Parsing "copy_reg" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\copy_reg.py")
+2013-12-13T11:21:32: Parsing "fnmatch" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\fnmatch.py")
+2013-12-13T11:21:32: Parsing "genericpath" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\genericpath.py")
+2013-12-13T11:21:32: Parsing "linecache" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\linecache.py")
+2013-12-13T11:21:32: Parsing "locale" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\locale.py")
+2013-12-13T11:21:32: Parsing "ntpath" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\ntpath.py")
+2013-12-13T11:21:32: Parsing "os" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\os.py")
+2013-12-13T11:21:32: Parsing "posixpath" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\posixpath.py")
+2013-12-13T11:21:32: Parsing "re" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\re.py")
+2013-12-13T11:21:32: Parsing "site" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site.py")
+2013-12-13T11:21:32: Parsing "sre" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\sre.py")
+2013-12-13T11:21:32: Parsing "sre_compile" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\sre_compile.py")
+2013-12-13T11:21:32: Parsing "sre_constants" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\sre_constants.py")
+2013-12-13T11:21:32: Parsing "sre_parse" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\sre_parse.py")
+2013-12-13T11:21:32: Parsing "stat" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\stat.py")
+2013-12-13T11:21:32: Parsing "types" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\types.py")
+2013-12-13T11:21:32: Parsing "UserDict" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\UserDict.py")
+2013-12-13T11:21:32: Parsing "warnings" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\warnings.py")
+2013-12-13T11:21:32: Parsing "_abcoll" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\_abcoll.py")
+2013-12-13T11:21:32: Parsing "_weakrefset" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\_weakrefset.py")
+2013-12-13T11:21:32: Parsing "distutils" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\distutils\__init__.py")
+2013-12-13T11:21:32: Parsing "encodings.aliases" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\aliases.py")
+2013-12-13T11:21:32: Parsing "encodings.ascii" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\ascii.py")
+2013-12-13T11:21:32: Parsing "encodings.base64_codec" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\base64_codec.py")
+2013-12-13T11:21:32: Parsing "encodings.big5" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\big5.py")
+2013-12-13T11:21:32: Parsing "encodings.big5hkscs" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\big5hkscs.py")
+2013-12-13T11:21:32: Parsing "encodings.bz2_codec" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\bz2_codec.py")
+2013-12-13T11:21:32: Parsing "encodings.charmap" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\charmap.py")
+2013-12-13T11:21:32: Parsing "encodings.cp037" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp037.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1006" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1006.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1026" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1026.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1140" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1140.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1250" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1250.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1251" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1251.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1252" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1252.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1253" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1253.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1254" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1254.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1255" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1255.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1256" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1256.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1257" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1257.py")
+2013-12-13T11:21:32: Parsing "encodings.cp1258" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp1258.py")
+2013-12-13T11:21:32: Parsing "encodings.cp424" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp424.py")
+2013-12-13T11:21:32: Parsing "encodings.cp437" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp437.py")
+2013-12-13T11:21:32: Parsing "encodings.cp500" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp500.py")
+2013-12-13T11:21:32: Parsing "encodings.cp720" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp720.py")
+2013-12-13T11:21:32: Parsing "encodings.cp737" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp737.py")
+2013-12-13T11:21:32: Parsing "encodings.cp775" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp775.py")
+2013-12-13T11:21:32: Parsing "encodings.cp850" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp850.py")
+2013-12-13T11:21:32: Parsing "encodings.cp852" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp852.py")
+2013-12-13T11:21:32: Parsing "encodings.cp855" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp855.py")
+2013-12-13T11:21:32: Parsing "encodings.cp856" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp856.py")
+2013-12-13T11:21:32: Parsing "encodings.cp857" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp857.py")
+2013-12-13T11:21:32: Parsing "encodings.cp858" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp858.py")
+2013-12-13T11:21:32: Parsing "encodings.cp860" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp860.py")
+2013-12-13T11:21:32: Parsing "encodings.cp861" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp861.py")
+2013-12-13T11:21:32: Parsing "encodings.cp862" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp862.py")
+2013-12-13T11:21:32: Parsing "encodings.cp863" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp863.py")
+2013-12-13T11:21:32: Parsing "encodings.cp864" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp864.py")
+2013-12-13T11:21:32: Parsing "encodings.cp865" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp865.py")
+2013-12-13T11:21:32: Parsing "encodings.cp866" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp866.py")
+2013-12-13T11:21:32: Parsing "encodings.cp869" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp869.py")
+2013-12-13T11:21:32: Parsing "encodings.cp874" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp874.py")
+2013-12-13T11:21:32: Parsing "encodings.cp875" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp875.py")
+2013-12-13T11:21:32: Parsing "encodings.cp932" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp932.py")
+2013-12-13T11:21:32: Parsing "encodings.cp949" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp949.py")
+2013-12-13T11:21:32: Parsing "encodings.cp950" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\cp950.py")
+2013-12-13T11:21:32: Parsing "encodings.euc_jisx0213" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\euc_jisx0213.py")
+2013-12-13T11:21:32: Parsing "encodings.euc_jis_2004" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\euc_jis_2004.py")
+2013-12-13T11:21:32: Parsing "encodings.euc_jp" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\euc_jp.py")
+2013-12-13T11:21:32: Parsing "encodings.euc_kr" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\euc_kr.py")
+2013-12-13T11:21:32: Parsing "encodings.gb18030" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\gb18030.py")
+2013-12-13T11:21:32: Parsing "encodings.gb2312" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\gb2312.py")
+2013-12-13T11:21:32: Parsing "encodings.gbk" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\gbk.py")
+2013-12-13T11:21:32: Parsing "encodings.hex_codec" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\hex_codec.py")
+2013-12-13T11:21:32: Parsing "encodings.hp_roman8" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\hp_roman8.py")
+2013-12-13T11:21:32: Parsing "encodings.hz" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\hz.py")
+2013-12-13T11:21:32: Parsing "encodings.idna" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\idna.py")
+2013-12-13T11:21:32: Parsing "encodings.iso2022_jp" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso2022_jp.py")
+2013-12-13T11:21:32: Parsing "encodings.iso2022_jp_1" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso2022_jp_1.py")
+2013-12-13T11:21:32: Parsing "encodings.iso2022_jp_2" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso2022_jp_2.py")
+2013-12-13T11:21:32: Parsing "encodings.iso2022_jp_2004" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso2022_jp_2004.py")
+2013-12-13T11:21:32: Parsing "encodings.iso2022_jp_3" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso2022_jp_3.py")
+2013-12-13T11:21:32: Parsing "encodings.iso2022_jp_ext" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso2022_jp_ext.py")
+2013-12-13T11:21:32: Parsing "encodings.iso2022_kr" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso2022_kr.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_1" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_1.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_10" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_10.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_11" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_11.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_13" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_13.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_14" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_14.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_15" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_15.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_16" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_16.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_2" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_2.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_3" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_3.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_4" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_4.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_5" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_5.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_6" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_6.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_7" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_7.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_8" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_8.py")
+2013-12-13T11:21:32: Parsing "encodings.iso8859_9" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\iso8859_9.py")
+2013-12-13T11:21:32: Parsing "encodings.johab" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\johab.py")
+2013-12-13T11:21:32: Parsing "encodings.koi8_r" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\koi8_r.py")
+2013-12-13T11:21:32: Parsing "encodings.koi8_u" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\koi8_u.py")
+2013-12-13T11:21:32: Parsing "encodings.latin_1" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\latin_1.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_arabic" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_arabic.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_centeuro" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_centeuro.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_croatian" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_croatian.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_cyrillic" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_cyrillic.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_farsi" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_farsi.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_greek" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_greek.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_iceland" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_iceland.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_latin2" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_latin2.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_roman" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_roman.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_romanian" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_romanian.py")
+2013-12-13T11:21:33: Parsing "encodings.mac_turkish" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mac_turkish.py")
+2013-12-13T11:21:33: Parsing "encodings.mbcs" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\mbcs.py")
+2013-12-13T11:21:33: Parsing "encodings.palmos" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\palmos.py")
+2013-12-13T11:21:33: Parsing "encodings.ptcp154" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\ptcp154.py")
+2013-12-13T11:21:33: Parsing "encodings.punycode" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\punycode.py")
+2013-12-13T11:21:33: Parsing "encodings.quopri_codec" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\quopri_codec.py")
+2013-12-13T11:21:33: Parsing "encodings.raw_unicode_escape" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\raw_unicode_escape.py")
+2013-12-13T11:21:33: Parsing "encodings.rot_13" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\rot_13.py")
+2013-12-13T11:21:33: Parsing "encodings.shift_jis" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\shift_jis.py")
+2013-12-13T11:21:33: Parsing "encodings.shift_jisx0213" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\shift_jisx0213.py")
+2013-12-13T11:21:33: Parsing "encodings.shift_jis_2004" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\shift_jis_2004.py")
+2013-12-13T11:21:33: Parsing "encodings.string_escape" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\string_escape.py")
+2013-12-13T11:21:33: Parsing "encodings.tis_620" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\tis_620.py")
+2013-12-13T11:21:33: Parsing "encodings.undefined" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\undefined.py")
+2013-12-13T11:21:33: Parsing "encodings.unicode_escape" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\unicode_escape.py")
+2013-12-13T11:21:33: Parsing "encodings.unicode_internal" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\unicode_internal.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_16" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_16.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_16_be" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_16_be.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_16_le" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_16_le.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_32" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_32.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_32_be" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_32_be.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_32_le" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_32_le.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_7" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_7.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_8" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_8.py")
+2013-12-13T11:21:33: Parsing "encodings.utf_8_sig" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\utf_8_sig.py")
+2013-12-13T11:21:33: Parsing "encodings.uu_codec" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\uu_codec.py")
+2013-12-13T11:21:33: Parsing "encodings.zlib_codec" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\zlib_codec.py")
+2013-12-13T11:21:33: Parsing "encodings" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\encodings\__init__.py")
+2013-12-13T11:21:33: Parsing complete
+2013-12-13T11:21:33: Analyzing "abc"
+2013-12-13T11:21:33: Analyzing "codecs"
+2013-12-13T11:21:33: Analyzing "copy_reg"
+2013-12-13T11:21:33: Analyzing "fnmatch"
+2013-12-13T11:21:33: Analyzing "genericpath"
+2013-12-13T11:21:33: Analyzing "linecache"
+2013-12-13T11:21:33: Analyzing "locale"
+2013-12-13T11:21:33: Analyzing "ntpath"
+2013-12-13T11:21:33: Analyzing "os"
+2013-12-13T11:21:33: Analyzing "posixpath"
+2013-12-13T11:21:33: Analyzing "re"
+2013-12-13T11:21:33: Analyzing "site"
+2013-12-13T11:21:33: Analyzing "sre"
+2013-12-13T11:21:33: Analyzing "sre_compile"
+2013-12-13T11:21:33: Analyzing "sre_constants"
+2013-12-13T11:21:33: Analyzing "sre_parse"
+2013-12-13T11:21:33: Analyzing "stat"
+2013-12-13T11:21:33: Analyzing "types"
+2013-12-13T11:21:33: Analyzing "UserDict"
+2013-12-13T11:21:33: Analyzing "warnings"
+2013-12-13T11:21:33: Analyzing "_abcoll"
+2013-12-13T11:21:33: Analyzing "_weakrefset"
+2013-12-13T11:21:33: Analyzing "distutils"
+2013-12-13T11:21:33: Analyzing "encodings.aliases"
+2013-12-13T11:21:33: Analyzing "encodings.ascii"
+2013-12-13T11:21:33: Analyzing "encodings.base64_codec"
+2013-12-13T11:21:33: Analyzing "encodings.big5"
+2013-12-13T11:21:33: Analyzing "encodings.big5hkscs"
+2013-12-13T11:21:33: Analyzing "encodings.bz2_codec"
+2013-12-13T11:21:33: Analyzing "encodings.charmap"
+2013-12-13T11:21:33: Analyzing "encodings.cp037"
+2013-12-13T11:21:33: Analyzing "encodings.cp1006"
+2013-12-13T11:21:33: Analyzing "encodings.cp1026"
+2013-12-13T11:21:33: Analyzing "encodings.cp1140"
+2013-12-13T11:21:33: Analyzing "encodings.cp1250"
+2013-12-13T11:21:33: Analyzing "encodings.cp1251"
+2013-12-13T11:21:33: Analyzing "encodings.cp1252"
+2013-12-13T11:21:33: Analyzing "encodings.cp1253"
+2013-12-13T11:21:33: Analyzing "encodings.cp1254"
+2013-12-13T11:21:33: Analyzing "encodings.cp1255"
+2013-12-13T11:21:33: Analyzing "encodings.cp1256"
+2013-12-13T11:21:33: Analyzing "encodings.cp1257"
+2013-12-13T11:21:33: Analyzing "encodings.cp1258"
+2013-12-13T11:21:33: Analyzing "encodings.cp424"
+2013-12-13T11:21:33: Analyzing "encodings.cp437"
+2013-12-13T11:21:33: Analyzing "encodings.cp500"
+2013-12-13T11:21:33: Analyzing "encodings.cp720"
+2013-12-13T11:21:33: Analyzing "encodings.cp737"
+2013-12-13T11:21:33: Analyzing "encodings.cp775"
+2013-12-13T11:21:33: Analyzing "encodings.cp850"
+2013-12-13T11:21:33: Analyzing "encodings.cp852"
+2013-12-13T11:21:33: Analyzing "encodings.cp855"
+2013-12-13T11:21:33: Analyzing "encodings.cp856"
+2013-12-13T11:21:33: Analyzing "encodings.cp857"
+2013-12-13T11:21:33: Analyzing "encodings.cp858"
+2013-12-13T11:21:33: Analyzing "encodings.cp860"
+2013-12-13T11:21:33: Analyzing "encodings.cp861"
+2013-12-13T11:21:33: Analyzing "encodings.cp862"
+2013-12-13T11:21:33: Analyzing "encodings.cp863"
+2013-12-13T11:21:33: Analyzing "encodings.cp864"
+2013-12-13T11:21:33: Analyzing "encodings.cp865"
+2013-12-13T11:21:33: Analyzing "encodings.cp866"
+2013-12-13T11:21:33: Analyzing "encodings.cp869"
+2013-12-13T11:21:33: Analyzing "encodings.cp874"
+2013-12-13T11:21:33: Analyzing "encodings.cp875"
+2013-12-13T11:21:33: Analyzing "encodings.cp932"
+2013-12-13T11:21:33: Analyzing "encodings.cp949"
+2013-12-13T11:21:33: Analyzing "encodings.cp950"
+2013-12-13T11:21:33: Analyzing "encodings.euc_jisx0213"
+2013-12-13T11:21:33: Analyzing "encodings.euc_jis_2004"
+2013-12-13T11:21:33: Analyzing "encodings.euc_jp"
+2013-12-13T11:21:33: Analyzing "encodings.euc_kr"
+2013-12-13T11:21:33: Analyzing "encodings.gb18030"
+2013-12-13T11:21:33: Analyzing "encodings.gb2312"
+2013-12-13T11:21:33: Analyzing "encodings.gbk"
+2013-12-13T11:21:33: Analyzing "encodings.hex_codec"
+2013-12-13T11:21:33: Analyzing "encodings.hp_roman8"
+2013-12-13T11:21:33: Analyzing "encodings.hz"
+2013-12-13T11:21:33: Analyzing "encodings.idna"
+2013-12-13T11:21:33: Analyzing "encodings.iso2022_jp"
+2013-12-13T11:21:33: Analyzing "encodings.iso2022_jp_1"
+2013-12-13T11:21:33: Analyzing "encodings.iso2022_jp_2"
+2013-12-13T11:21:33: Analyzing "encodings.iso2022_jp_2004"
+2013-12-13T11:21:33: Analyzing "encodings.iso2022_jp_3"
+2013-12-13T11:21:33: Analyzing "encodings.iso2022_jp_ext"
+2013-12-13T11:21:33: Analyzing "encodings.iso2022_kr"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_1"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_10"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_11"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_13"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_14"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_15"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_16"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_2"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_3"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_4"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_5"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_6"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_7"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_8"
+2013-12-13T11:21:33: Analyzing "encodings.iso8859_9"
+2013-12-13T11:21:33: Analyzing "encodings.johab"
+2013-12-13T11:21:33: Analyzing "encodings.koi8_r"
+2013-12-13T11:21:33: Analyzing "encodings.koi8_u"
+2013-12-13T11:21:33: Analyzing "encodings.latin_1"
+2013-12-13T11:21:33: Analyzing "encodings.mac_arabic"
+2013-12-13T11:21:33: Analyzing "encodings.mac_centeuro"
+2013-12-13T11:21:33: Analyzing "encodings.mac_croatian"
+2013-12-13T11:21:33: Analyzing "encodings.mac_cyrillic"
+2013-12-13T11:21:33: Analyzing "encodings.mac_farsi"
+2013-12-13T11:21:33: Analyzing "encodings.mac_greek"
+2013-12-13T11:21:33: Analyzing "encodings.mac_iceland"
+2013-12-13T11:21:33: Analyzing "encodings.mac_latin2"
+2013-12-13T11:21:33: Analyzing "encodings.mac_roman"
+2013-12-13T11:21:33: Analyzing "encodings.mac_romanian"
+2013-12-13T11:21:33: Analyzing "encodings.mac_turkish"
+2013-12-13T11:21:33: Analyzing "encodings.mbcs"
+2013-12-13T11:21:33: Analyzing "encodings.palmos"
+2013-12-13T11:21:33: Analyzing "encodings.ptcp154"
+2013-12-13T11:21:33: Analyzing "encodings.punycode"
+2013-12-13T11:21:33: Analyzing "encodings.quopri_codec"
+2013-12-13T11:21:33: Analyzing "encodings.raw_unicode_escape"
+2013-12-13T11:21:33: Analyzing "encodings.rot_13"
+2013-12-13T11:21:33: Analyzing "encodings.shift_jis"
+2013-12-13T11:21:33: Analyzing "encodings.shift_jisx0213"
+2013-12-13T11:21:33: Analyzing "encodings.shift_jis_2004"
+2013-12-13T11:21:33: Analyzing "encodings.string_escape"
+2013-12-13T11:21:33: Analyzing "encodings.tis_620"
+2013-12-13T11:21:33: Analyzing "encodings.undefined"
+2013-12-13T11:21:33: Analyzing "encodings.unicode_escape"
+2013-12-13T11:21:33: Analyzing "encodings.unicode_internal"
+2013-12-13T11:21:33: Analyzing "encodings.utf_16"
+2013-12-13T11:21:33: Analyzing "encodings.utf_16_be"
+2013-12-13T11:21:33: Analyzing "encodings.utf_16_le"
+2013-12-13T11:21:33: Analyzing "encodings.utf_32"
+2013-12-13T11:21:33: Analyzing "encodings.utf_32_be"
+2013-12-13T11:21:33: Analyzing "encodings.utf_32_le"
+2013-12-13T11:21:33: Analyzing "encodings.utf_7"
+2013-12-13T11:21:33: Analyzing "encodings.utf_8"
+2013-12-13T11:21:33: Analyzing "encodings.utf_8_sig"
+2013-12-13T11:21:33: Analyzing "encodings.uu_codec"
+2013-12-13T11:21:33: Analyzing "encodings.zlib_codec"
+2013-12-13T11:21:33: Analyzing "encodings"
+2013-12-13T11:21:33: Starting analysis of 143 modules
+2013-12-13T11:21:34: Analysis complete
+2013-12-13T11:21:34: Saving group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\"
+2013-12-13T11:21:35: End of group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\"
+2013-12-13T11:21:35: Start group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\" with 34 files
+2013-12-13T11:21:36: Parsing "pip.basecommand" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\basecommand.py")
+2013-12-13T11:21:36: Parsing "pip.baseparser" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\baseparser.py")
+2013-12-13T11:21:36: Parsing "pip.cmdoptions" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\cmdoptions.py")
+2013-12-13T11:21:36: Parsing "pip.download" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\download.py")
+2013-12-13T11:21:36: Parsing "pip.exceptions" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\exceptions.py")
+2013-12-13T11:21:36: Parsing "pip.index" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\index.py")
+2013-12-13T11:21:36: Parsing "pip.locations" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\locations.py")
+2013-12-13T11:21:36: Parsing "pip.log" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\log.py")
+2013-12-13T11:21:36: Parsing "pip.req" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\req.py")
+2013-12-13T11:21:36: Parsing "pip.runner" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\runner.py")
+2013-12-13T11:21:36: Parsing "pip.status_codes" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\status_codes.py")
+2013-12-13T11:21:36: Parsing "pip.util" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\util.py")
+2013-12-13T11:21:36: Parsing "pip" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\__init__.py")
+2013-12-13T11:21:36: Parsing "pip.__main__" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\__main__.py")
+2013-12-13T11:21:36: Parsing "pip.backwardcompat.socket_create_connection" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\backwardcompat\socket_create_connection.py")
+2013-12-13T11:21:36: Parsing "pip.backwardcompat.ssl_match_hostname" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\backwardcompat\ssl_match_hostname.py")
+2013-12-13T11:21:36: Parsing "pip.backwardcompat" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\backwardcompat\__init__.py")
+2013-12-13T11:21:36: Parsing "pip.commands.bundle" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\bundle.py")
+2013-12-13T11:21:36: Parsing "pip.commands.completion" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\completion.py")
+2013-12-13T11:21:36: Parsing "pip.commands.freeze" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\freeze.py")
+2013-12-13T11:21:36: Parsing "pip.commands.help" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\help.py")
+2013-12-13T11:21:36: Parsing "pip.commands.install" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\install.py")
+2013-12-13T11:21:36: Parsing "pip.commands.list" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\list.py")
+2013-12-13T11:21:36: Parsing "pip.commands.search" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\search.py")
+2013-12-13T11:21:36: Parsing "pip.commands.show" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\show.py")
+2013-12-13T11:21:36: Parsing "pip.commands.uninstall" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\uninstall.py")
+2013-12-13T11:21:36: Parsing "pip.commands.unzip" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\unzip.py")
+2013-12-13T11:21:36: Parsing "pip.commands.zip" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\zip.py")
+2013-12-13T11:21:36: Parsing "pip.commands" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\commands\__init__.py")
+2013-12-13T11:21:36: Parsing "pip.vcs.bazaar" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\vcs\bazaar.py")
+2013-12-13T11:21:36: Parsing "pip.vcs.git" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\vcs\git.py")
+2013-12-13T11:21:36: Parsing "pip.vcs.mercurial" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\vcs\mercurial.py")
+2013-12-13T11:21:36: Parsing "pip.vcs.subversion" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\vcs\subversion.py")
+2013-12-13T11:21:36: Parsing "pip.vcs" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\pip\vcs\__init__.py")
+2013-12-13T11:21:36: Parsing complete
+2013-12-13T11:21:36: Analyzing "pip.basecommand"
+2013-12-13T11:21:36: Analyzing "pip.baseparser"
+2013-12-13T11:21:36: Analyzing "pip.cmdoptions"
+2013-12-13T11:21:36: Analyzing "pip.download"
+2013-12-13T11:21:36: Analyzing "pip.exceptions"
+2013-12-13T11:21:36: Analyzing "pip.index"
+2013-12-13T11:21:36: Analyzing "pip.locations"
+2013-12-13T11:21:36: Analyzing "pip.log"
+2013-12-13T11:21:36: Analyzing "pip.req"
+2013-12-13T11:21:36: Analyzing "pip.runner"
+2013-12-13T11:21:36: Analyzing "pip.status_codes"
+2013-12-13T11:21:36: Analyzing "pip.util"
+2013-12-13T11:21:36: Analyzing "pip"
+2013-12-13T11:21:36: Analyzing "pip.__main__"
+2013-12-13T11:21:36: Analyzing "pip.backwardcompat.socket_create_connection"
+2013-12-13T11:21:36: Analyzing "pip.backwardcompat.ssl_match_hostname"
+2013-12-13T11:21:36: Analyzing "pip.backwardcompat"
+2013-12-13T11:21:36: Analyzing "pip.commands.bundle"
+2013-12-13T11:21:36: Analyzing "pip.commands.completion"
+2013-12-13T11:21:36: Analyzing "pip.commands.freeze"
+2013-12-13T11:21:36: Analyzing "pip.commands.help"
+2013-12-13T11:21:36: Analyzing "pip.commands.install"
+2013-12-13T11:21:36: Analyzing "pip.commands.list"
+2013-12-13T11:21:36: Analyzing "pip.commands.search"
+2013-12-13T11:21:36: Analyzing "pip.commands.show"
+2013-12-13T11:21:36: Analyzing "pip.commands.uninstall"
+2013-12-13T11:21:36: Analyzing "pip.commands.unzip"
+2013-12-13T11:21:36: Analyzing "pip.commands.zip"
+2013-12-13T11:21:36: Analyzing "pip.commands"
+2013-12-13T11:21:36: Analyzing "pip.vcs.bazaar"
+2013-12-13T11:21:36: Analyzing "pip.vcs.git"
+2013-12-13T11:21:36: Analyzing "pip.vcs.mercurial"
+2013-12-13T11:21:36: Analyzing "pip.vcs.subversion"
+2013-12-13T11:21:36: Analyzing "pip.vcs"
+2013-12-13T11:21:36: Starting analysis of 34 modules
+2013-12-13T11:21:38: Analysis complete
+2013-12-13T11:21:38: Saving group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\"
+2013-12-13T11:21:38: End of group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\pip-1.3.1-py2.7.egg\"
+2013-12-13T11:21:38: Start group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Scripts" with 1 files
+2013-12-13T11:21:40: Parsing "activate_this" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Scripts\activate_this.py")
+2013-12-13T11:21:40: Parsing complete
+2013-12-13T11:21:40: Analyzing "activate_this"
+2013-12-13T11:21:40: Starting analysis of 1 modules
+2013-12-13T11:21:40: Analysis complete
+2013-12-13T11:21:40: Saving group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Scripts"
+2013-12-13T11:21:40: End of group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Scripts"
+2013-12-13T11:21:40: Start group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests" with 72 files
+2013-12-13T11:21:41: Parsing "requests.adapters" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\adapters.py")
+2013-12-13T11:21:41: Parsing "requests.api" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\api.py")
+2013-12-13T11:21:41: Parsing "requests.auth" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\auth.py")
+2013-12-13T11:21:41: Parsing "requests.certs" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\certs.py")
+2013-12-13T11:21:41: Parsing "requests.compat" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\compat.py")
+2013-12-13T11:21:41: Parsing "requests.cookies" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\cookies.py")
+2013-12-13T11:21:41: Parsing "requests.exceptions" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\exceptions.py")
+2013-12-13T11:21:41: Parsing "requests.hooks" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\hooks.py")
+2013-12-13T11:21:41: Parsing "requests.models" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\models.py")
+2013-12-13T11:21:41: Parsing "requests.sessions" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\sessions.py")
+2013-12-13T11:21:41: Parsing "requests.status_codes" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\status_codes.py")
+2013-12-13T11:21:41: Parsing "requests.structures" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\structures.py")
+2013-12-13T11:21:41: Parsing "requests.utils" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\utils.py")
+2013-12-13T11:21:41: Parsing "requests" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\__init__.py")
+2013-12-13T11:21:41: Parsing "requests.packages" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\__init__.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.big5freq" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\big5freq.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.big5prober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\big5prober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.chardistribution" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\chardistribution.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.charsetgroupprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\charsetgroupprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.charsetprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\charsetprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.codingstatemachine" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\codingstatemachine.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.compat" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\compat.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.constants" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\constants.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.cp949prober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\cp949prober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.escprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\escprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.escsm" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\escsm.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.eucjpprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\eucjpprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.euckrfreq" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\euckrfreq.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.euckrprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\euckrprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.euctwfreq" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\euctwfreq.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.euctwprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\euctwprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.gb2312freq" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\gb2312freq.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.gb2312prober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\gb2312prober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.hebrewprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\hebrewprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.jisfreq" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\jisfreq.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.jpcntx" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\jpcntx.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.langbulgarianmodel" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\langbulgarianmodel.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.langcyrillicmodel" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\langcyrillicmodel.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.langgreekmodel" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\langgreekmodel.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.langhebrewmodel" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\langhebrewmodel.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.langhungarianmodel" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\langhungarianmodel.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.langthaimodel" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\langthaimodel.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.latin1prober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\latin1prober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.mbcharsetprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\mbcharsetprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.mbcsgroupprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\mbcsgroupprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.mbcssm" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\mbcssm.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.sbcharsetprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\sbcharsetprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.sbcsgroupprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\sbcsgroupprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.sjisprober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\sjisprober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.universaldetector" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\universaldetector.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.utf8prober" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\utf8prober.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\__init__.py")
+2013-12-13T11:21:41: Parsing "requests.packages.charade.__main__" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\charade\__main__.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.connection" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\connection.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.connectionpool" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\connectionpool.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.exceptions" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\exceptions.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.fields" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\fields.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.filepost" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\filepost.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.poolmanager" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\poolmanager.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.request" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\request.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.response" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\response.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.util" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\util.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3._collections" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\_collections.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\__init__.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.contrib.ntlmpool" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\contrib\ntlmpool.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.contrib.pyopenssl" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\contrib\pyopenssl.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.contrib" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\contrib\__init__.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.packages.ordered_dict" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\packages\ordered_dict.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.packages.six" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\packages\six.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.packages" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\packages\__init__.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.packages.ssl_match_hostname._implementation" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\packages\ssl_match_hostname\_implementation.py")
+2013-12-13T11:21:41: Parsing "requests.packages.urllib3.packages.ssl_match_hostname" ("C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests\packages\urllib3\packages\ssl_match_hostname\__init__.py")
+2013-12-13T11:21:41: Parsing complete
+2013-12-13T11:21:41: Analyzing "requests.adapters"
+2013-12-13T11:21:41: Analyzing "requests.api"
+2013-12-13T11:21:41: Analyzing "requests.auth"
+2013-12-13T11:21:41: Analyzing "requests.certs"
+2013-12-13T11:21:41: Analyzing "requests.compat"
+2013-12-13T11:21:41: Analyzing "requests.cookies"
+2013-12-13T11:21:41: Analyzing "requests.exceptions"
+2013-12-13T11:21:41: Analyzing "requests.hooks"
+2013-12-13T11:21:41: Analyzing "requests.models"
+2013-12-13T11:21:41: Analyzing "requests.sessions"
+2013-12-13T11:21:41: Analyzing "requests.status_codes"
+2013-12-13T11:21:41: Analyzing "requests.structures"
+2013-12-13T11:21:41: Analyzing "requests.utils"
+2013-12-13T11:21:41: Analyzing "requests"
+2013-12-13T11:21:41: Analyzing "requests.packages"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.big5freq"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.big5prober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.chardistribution"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.charsetgroupprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.charsetprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.codingstatemachine"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.compat"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.constants"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.cp949prober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.escprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.escsm"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.eucjpprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.euckrfreq"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.euckrprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.euctwfreq"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.euctwprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.gb2312freq"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.gb2312prober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.hebrewprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.jisfreq"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.jpcntx"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.langbulgarianmodel"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.langcyrillicmodel"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.langgreekmodel"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.langhebrewmodel"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.langhungarianmodel"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.langthaimodel"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.latin1prober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.mbcharsetprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.mbcsgroupprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.mbcssm"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.sbcharsetprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.sbcsgroupprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.sjisprober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.universaldetector"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.utf8prober"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade"
+2013-12-13T11:21:41: Analyzing "requests.packages.charade.__main__"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.connection"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.connectionpool"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.exceptions"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.fields"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.filepost"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.poolmanager"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.request"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.response"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.util"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3._collections"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.contrib.ntlmpool"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.contrib.pyopenssl"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.contrib"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.packages.ordered_dict"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.packages.six"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.packages"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.packages.ssl_match_hostname._implementation"
+2013-12-13T11:21:41: Analyzing "requests.packages.urllib3.packages.ssl_match_hostname"
+2013-12-13T11:21:41: Starting analysis of 72 modules
+2013-12-13T11:21:42: Analysis complete
+2013-12-13T11:21:42: Saving group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests"
+2013-12-13T11:21:42: End of group "C:\Projects\GitHub\Utils\iapply.console_utils\env\Lib\site-packages\requests"
+
+2013-12-13T11:31:02: Start analysis
+2013-12-13T11:31:02: Deleting 0 files

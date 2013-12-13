@@ -32,19 +32,23 @@ class Service:
 
         return self.session_id
 
-    def create_resource(self, resource_name, method_name = "", req_data = None ):
+    def create_resource(self, resource_name, method_name = "", req_data = None, extra_params = None ):
         request_url = "%s/api/%s/%s" % ( self.service_address, resource_name, method_name )
         headers =  { "session-id" : self.get_session_id(), 'Content-type': 'application/json' }
-        response = requests.post(url = request_url, data = req_data, headers = headers)
+        response = requests.post(url = request_url, data = req_data, params = extra_params, headers = headers)
         if response.status_code not in (200,201):
             response.raise_for_status()
+        else:
+            return response.json()
 
-    def update_resource(self, resource_name, resource_id, method_name = "", req_data = None ):
+    def update_resource(self, resource_name, resource_id, method_name = "", req_data = None, extra_params = None ):
         request_url = "%s/api/%s/%s/%s" % ( self.service_address, resource_name, resource_id, method_name )
         headers =  { "session-id" : self.get_session_id(), 'Content-type': 'application/json' }
-        response = requests.put(url = request_url, data = req_data, headers = headers)
+        response = requests.put(url = request_url, data = req_data, params = extra_params, headers = headers)
         if response.status_code not in (200,201):
             response.raise_for_status()
+        else:
+            return response.json()
 
 
     def _get_paged(self, resource_name, page = 1, page_size = DEFAULT_PAGE_SIZE):
@@ -78,7 +82,7 @@ class Service:
             response.raise_for_status()
 
 
-    def upsert_specification(self, spec_resource, spec_name, spec_file, def_key = 'Definition', naked_definition_on_update = True):
+    def upsert_specification(self, spec_resource, spec_name, spec_file, def_key = 'Definition', naked_definition_on_update = True, parent_id = None):
         f= open(spec_file,"r")
         def_text = f.read();
         def_node = json.loads(def_text)
@@ -88,6 +92,9 @@ class Service:
         existing_id = None
         data = json.dumps( { 'Name': spec_name, def_key : def_node } )
 
+        if parent_id:
+            data = json.dumps( { 'Name': spec_name, def_key : def_node, 'SpecificationId': parent_id  } )
+
         for p in all_specs:
             if p['Name'] == spec_name:
                 existing_id = p['Id']
@@ -95,11 +102,13 @@ class Service:
 
         if existing_id:
             if naked_definition_on_update:
-                self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = json.dumps(def_node) )
+                r = self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = json.dumps(def_node) )
+                return r['Id']
             else:
-                self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = data )
+                r = self.update_resource( resource_name = spec_resource, resource_id = existing_id, req_data = data )
+                return r['Id']
         else:
-            self.create_resource( resource_name = spec_resource, req_data = data)
+            r = self.create_resource( resource_name = spec_resource, req_data = data)
+            return r['Id']
 
-        pass
 

@@ -37,8 +37,10 @@ def create_web_service_demo_2013_specs(service_addr = DEFAULT_SERVICE_ADDRESS):
 def create_parallel_demo_2013_specs(service_addr = DEFAULT_SERVICE_ADDRESS):
     try:
         iapply_service = Service(service_addr)
-        iapply_service.upsert_specification("casedefinitions", "HumanTaskDemo_PD", "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\HumanTaskDemo.txt" % PROJECT_DIR)
-        iapply_service.upsert_specification("subprocesses", "RiskAnalysisSubProcess_PD", "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\RiskSubProcess.txt" % PROJECT_DIR)
+        case_id = iapply_service.upsert_specification("casedefinitions", "HumanTaskDemo_PD", "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\HumanTaskDemo.txt" % PROJECT_DIR)
+        iapply_service.upsert_specification( spec_resource = "subprocesses", spec_name = "RiskAnalysisSubProcess_PD", 
+                                                spec_file = "%s\scripts\december_2013_demo\emulated_clients\Case Definitions\RiskSubProcess.txt" % PROJECT_DIR, 
+                                                parent_id = case_id)
 
         iapply_service.upsert_specification("taskspecifications", "ReviewApp_PD", "%s\Scripts\December_2013_demo\Emulated_Clients\Task Definitions\BR_Manager_Task.txt" % PROJECT_DIR, 
                                             def_key = 'TaskDefinition',
@@ -60,5 +62,5 @@ def create_parallel_demo_2013_specs(service_addr = DEFAULT_SERVICE_ADDRESS):
     except Exception as x:
         print x
 
-# create_parallel_demo_2013_specs("http://ia2server/iapplyng")
-create_web_service_demo_2013_specs("http://localhost:57611")
+create_parallel_demo_2013_specs("http://ia2server")
+#create_web_service_demo_2013_specs("http://localhost:57611")
