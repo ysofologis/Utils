@@ -1,0 +1,28 @@
+﻿<controls:MetroWindow x:Class="FreeSrc.DevUtils.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:views="clr-namespace:FreeSrc.DevUtils.Views"
+        xmlns:models="clr-namespace:FreeSrc.DevUtils.Models"
+        Title=".NET Developer Utils" 
+        Height="350" 
+        Width="525"
+        BorderThickness="1.5"
+        BorderBrush="SlateGray"
+        AllowsTransparency="True">
+    <controls:MetroWindow.Background>
+        <SolidColorBrush Color="WhiteSmoke" Opacity="0.7"/>
+    </controls:MetroWindow.Background>
+    <controls:MetroWindow.DataContext>
+        <models:WindowVM/>
+    </controls:MetroWindow.DataContext>
+    <Grid>
+        <TabControl>
+            <TabItem Header="Message Queue Viewer">
+                <views:MQViewer DataContext="{Binding [MQViewer]}">
+                    
+                </views:MQViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</controls:MetroWindow>
